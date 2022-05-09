@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LMS</string>
+    <string name="nav_header_title">LMS</string>
+    <string name="nav_header_desc">LMS Logo</string>
+
+    <string name="fab">FAB</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_admin">Admin Login</string>
+    <string name="menu_student">Student Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_signup">New User?</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_about">About</string>
+
+    <string name="main">http://10.0.2.2:8000/</string>
+    <string name="admin">admin_login</string>
+    <string name="student">signin</string>
+    <string name="logout">logout</string>
+    <string name="signup">signup</string>
+    <string name="support">#contact</string>
+    <string name="about">#about</string>
+</resources>
