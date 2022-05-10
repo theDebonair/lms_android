@@ -13,7 +13,7 @@
     <string name="menu_support">Support</string>
     <string name="menu_about">About</string>
 
-    <string name="main">http://10.0.2.2:8000/</string>
+    <string name="main">https://www.lmsapp.pythonanywhere.com/</string>
     <string name="admin">admin_login</string>
     <string name="student">signin</string>
     <string name="logout">logout</string>
