@@ -29,6 +29,7 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/white"
         app:srcCompat="@drawable/ic_hamburger"
+        android:hapticFeedbackEnabled="true"
         android:contentDescription="@string/fab" />
 
     <include
