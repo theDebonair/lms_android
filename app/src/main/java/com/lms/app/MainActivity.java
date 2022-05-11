@@ -2,7 +2,10 @@ package com.lms.app;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         FloatingActionButton fab = binding.appBarMain.fab;
+        Vibrator vibrate = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         setSupportActionBar(binding.appBarMain.toolbar);
         getSupportActionBar().hide();
@@ -42,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (Build.VERSION.SDK_INT >= 26) {
+                    vibrate.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
+                }
+                else {
+                    vibrate.vibrate(100);
+                }
                 drawer.openDrawer(GravityCompat.START);
             }
         });
