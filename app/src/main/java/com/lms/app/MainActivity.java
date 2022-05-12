@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (Build.VERSION.SDK_INT >= 26) {
-                    vibrate.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
+                    vibrate.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
                 }
                 else {
-                    vibrate.vibrate(100);
+                    vibrate.vibrate(50);
                 }
                 drawer.openDrawer(GravityCompat.START);
             }
@@ -64,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
 
                 WebView webView = findViewById(R.id.web_view_main);
                 ProgressBar progressBar = findViewById(R.id.progressBar);
+
+                if (Build.VERSION.SDK_INT >= 26) {
+                    vibrate.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
+                }
+                else {
+                    vibrate.vibrate(50);
+                }
 
                 webView.setWebViewClient(new WebViewController() {
                     @Override
