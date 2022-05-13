@@ -6,3 +6,6 @@
 ## Things to know:
 - ###### IDE: Android Studio
 - ###### Language: JAVA
+
+## P.S:
+- ###### Feel free to make suggestions, report bugs on this project's [discussions](https://github.com/theDebonair/lms_android/discussions) tab.
